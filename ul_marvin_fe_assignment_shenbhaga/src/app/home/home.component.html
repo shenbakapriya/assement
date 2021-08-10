@@ -1,0 +1,30 @@
+
+<h3>Project List <button class="create" (click)="create()">Create</button></h3>
+
+<div class="col-md-12">
+<table class="table">
+    <thead>
+        <tr><th>
+            Project ID
+        </th>
+        <th>
+            Project Name
+        </th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of projectList">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <button type="button" class="btn btn-primary" (click)="delete(item)">
+                    Archive
+                  </button>
+                  
+                  <!-- Modal -->
+                 </td>
+        </tr>
+    </tbody>
+</table>
+</div>
