@@ -1,0 +1,28 @@
+<h3>Add New Project</h3>
+<div class="form">
+     <div>
+         <span>Name: 
+
+         </span>
+         <span>
+             <input type="text" [(ngModel)]="name">
+         </span>
+     </div>
+     <div>
+        <span>Status: 
+
+        </span>
+        <span>
+           <select [(ngModel)]="status">
+               <option value="IN_PROGRESS">IN_PROGRESS
+
+               </option>
+               <option value="FINISHED">FINISHED
+
+               </option>
+           </select>
+        </span>
+    </div>
+    <button (click)="save()">SAVE</button>
+
+</div>
